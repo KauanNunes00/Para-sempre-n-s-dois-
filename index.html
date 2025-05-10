@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosso Amor 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #ffe6f0, #ffe0ec);
+      font-family: 'Quicksand', sans-serif;
+      color: #5c0033;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5em;
+      color: #cc005f;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #7a004f;
+    }
+
+    .card, #romanticText, #monthText {
+      background: #fff0f5;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 600px;
+      font-size: 1.1em;
+      box-shadow: 0 8px 20px rgba(255, 0, 102, 0.15);
+      display: none;
+    }
+
+    .card.show {
+      display: block;
+    }
+
+    .love-button, .month-button {
+      background: #ff3385;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px 5px;
+      font-size: 1em;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(255, 51, 133, 0.3);
+      transition: background 0.3s ease;
+    }
+
+    .love-button:hover, .month-button:hover {
+      background: #cc0066;
+    }
+
+    .counter {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #88004f;
+      font-weight: bold;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> Eu te amo para sempre princesiha💖</h1>
+  <p class="subtitle">Uma homenagem para o nosso amor eterno Rebecca e Kauan</p>
+
+  <div class="counter" id="contador"></div>
+
+  <!-- Frases Bonitas -->
+  <div class="card show">
+    <p>O tempo para quando estou com você. Cada segundo ao seu lado vale mais que mil vidas sem o seu amor.</p>
+  </div>
+  <div class="card show">
+    <p>Se amar você é um sonho, então nunca quero acordar. Você é o meu melhor capítulo.</p>
+  </div>
+  <div class="card show">
+    <p>Você é a luz que ilumina minha vida, a melodia mais doce que embala meu coração.</p>
+  </div>
+  <div class="card show">
+    <p>Te amar me ensinou que os sentimentos mais profundos são também os mais simples: um olhar, um abraço, um "fica comigo pra sempre".</p>
+  </div>
+
+  <!-- Botão Eu Te Amo -->
+  <button class="love-button" onclick="mostrarMensagem()">💘 Clique aqui primeiro amor 💘</button>
+
+  <div id="romanticText" class="card">
+    <p>
+      Meu amor, obrigado por me ensinar o que é o amor, eu nao faço ideia do que eu seria sem você, obrigado por sempre estar ao meu lado me apoiando, me apaixono cada dia mais por você, pode ter certeza disso.
+      Fiz esse site para você, ele é somente seu, se você olhar em baixo tem alguns meses, quero que vc leia cada um deles em cada mês diferente, quando sentir saudade, quando lembrar de mim venha aqui.
+      Mesmo na missão eu nunca vou esquecer da minha princesinha, pode ter certeza absolutra disso, o senhor me motrou você e ali eu sabia que te amava, via o quão diferete era, me apaixonei por todos detalhes possíveis
+      que imaginar, o seu jeitinho, seu cheiro, seu cabelo, sua pele, sua forma de ficar estressadiha, tudo em você me encanta, mas o que eu percebo e sou muito apaixonado nisso, é o coração gigantesco que você tem, nada
+      nesse mundo se compará a ele, ele é surreal de íncrivel, apesar das injustiças, dos desentendimentos, dos dias ruins, ele continua sendo bom, querendo o melhor das outras pessoas, se importanto tanto... Só quero dizer
+      pra você nunca mudar isso, que continue com esse seu jeitinho sempre, você será para sempre miha pequena, minha branquinha, minha ruiva, minha morena, você é tudo para mim!
+      Agradeço ao senhor por ter te colocado em minha vida prometo te amar, te respeitar e caminhar ao seu lado por todos os caminhos da vida.
+      Com você, a vida é mais leve, mais linda, mais completa. Te amo com todo o meu coração.
+      Como Frank Ocean fala em Godspeed: I will always love you, how i do, let go of a prayer for you, just a sweet word, the table is prepared for you, wishing you Godspeed, glory, there will mountains you won´t move, still, i´ll always be there for you! ❤️
+    </p>
+  </div>
+
+  <!-- Botões de meses -->
+  <h3 style="margin-top: 40px;">Textos por Mês 🌙</h3>
+  <div id="meses">
+    <button class="month-button" onclick="mostrarMes('janeiro')">Janeiro</button>
+    <button class="month-button" onclick="mostrarMes('fevereiro')">Fevereiro</button>
+    <button class="month-button" onclick="mostrarMes('marco')">Março</button>
+    <button class="month-button" onclick="mostrarMes('abril')">Abril</button>
+    <button class="month-button" onclick="mostrarMes('maio')">Maio</button>
+    <button class="month-button" onclick="mostrarMes('junho')">Junho</button>
+    <button class="month-button" onclick="mostrarMes('julho')">Julho</button>
+    <button class="month-button" onclick="mostrarMes('agosto')">Agosto</button>
+    <button class="month-button" onclick="mostrarMes('setembro')">Setembro</button>
+    <button class="month-button" onclick="mostrarMes('outubro')">Outubro</button>
+    <button class="month-button" onclick="mostrarMes('novembro')">Novembro</button>
+    <button class="month-button" onclick="mostrarMes('dezembro')">Dezembro</button>
+  </div>
+
+  <div id="monthText" class="card"></div>
+
+  <!-- Música de fundo -->
+  <audio autoplay loop id="bgMusic">
+    <source src="https://dl.sndup.net/hspq/godspeed%20-%20frank%20ocean.mp3" type="audio/mp3">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <script>
+    // Contador desde 20/09/2024
+    const inicio = new Date("2024-09-20T00:00:00");
+
+    function atualizarContador() {
+      const agora = new Date();
+      const diferenca = agora 
+      const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferenca / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diferenca / (1000 * 60)) % 60);
+      const segundos = Math.floor((diferenca / 1000) % 60);
+
+      document.getElementById("contador").innerText =
+        `Estamos juntos há ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos 💞`;
+    }
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+
+    function mostrarMensagem() {
+      document.getElementById("romanticText").style.display = "block";
+      document.getElementById("romanticText").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function mostrarMes(mes) {
+      const textos = {
+        janeiro: "🌟 Janeiro: Janeiro, janeiro é o inicio de tudo, tudo lindo, estamos tranquilos, fizemos novas promessas, e agora começa mais um ano, sim, mais um ano que quero você comigo, mais um ano aonde peço para que seja nós dois sempre, mesmo longe, mas ainda sim com um amor imenso por você. Eu te amo, para sempre, em todos os anos! Te prometo que em meio a qualquer dificuldade, eu nunca vou desistir de você, mesmo que a saudade esteja muito grande, porque já está, mesmo que os dias estejam ruins, que o ano pareça demorado de mais para te reencontrar, eu prometo permanecer firme, todo os dias, meses, anos, te amando da forma mais genuina possível. Estou com saudades... ",
+        fevereiro: "💘 Você sabia que fevereiro é o mês do amor? Porém, meu amor por você vai muito além de datas, me lembro do nosso pedido de namoro que por mais que não tivemos tantas fotos, ainda sim foi muito especial, eu sou apaixonado por nosso pedido, lembro de todos os sentimentos que tive no dia mas o melhor mesmo foi ajoelhar, ohar para você e ver seu sorriso de surpresa, felicidade, sem conseguir exboçar reação por algo que talvez ja fosse obvio que iria acontecer, mas ainda sim ficou sem saber o que falar, sem dúvidas foi um dia muito especial e que eu AMO imensamente, obrigado por fazer dessa data tão especial, saiba que nunca vou esquecer, eu te amo meu amor!",
+        marco: "🌷 Março: Março, chega calmo mas ao mesmo tempo com festas, como o carnaval, no rio vai ser uma loucura essa semana eu não tenho dúvida, mas quer saber, legal mesmo seria aproveitar um FSY, um acampamento, junto com você kkkk saiba que eu não quero outra pessoa, nem se quer vou olhar para alguém, pode ficar bem tranquilinha kkkk estou fazendo o serviço do nosso pai celestial, estou focado e se for para olhar para alguma mulher, com olhar de paixão, admiração, entre outros, que seja só para você e mais ninguém. Você é o meu motivo para acreditar mesmo quando tudo parece incerto.",
+        abril: "🌸 Abril: Abril floresce sentimentos, e o maior deles é o que eu sinto por você. Cada lembrança tua me deixa com mais saudade. Mesmo longe, você está em tudo que há de mais bonito em mim. se for 2026 ainda falta mais um tempinho, mas se for 2027 eu já estou chegando, independente da data, a saudade é imensa, o meu amor por você está cada vez mais forte, tenho certeza que estarei retornando um homem melhor, muito mais próximo do senhor. Sinto falta de te levar para sair, te dar varios presentinhos, ver esse sorrisinho perfeito pessoalmente, que saudade disso. Eu posso te ver 3 bilhões de vezes seguidas mas eu nunca vou me cansar de ti, eu posso ficar anos sem te vere ainda sim vou ser a pessoa mais apaixonada por você, eu te amo, mas saiba que é muito, não é pouco, nunca fui de insistir por alguém, isso só aconteceu com você, o meu primeiro amor de fato, é impossivel ser 100% feliz sem você comigo, obrigado por estar me dndo forças e estar sendo o meu combustível, lembre-se que cada di que se passa é menos um dia para chegar o dia de nos reencontrar, eu te amo muito e nada vai mudar isso, te quero para sempre ao meu lado, quero poder cumprir esses dois anos com honra e saber que a minha futura esposa está me esperando, eu te amo muito, sou muito gratoo por ter você, não importa quanto tempo passe, você sempre terá o eu coração.", 
+        maio: "🌼 Maio: maio, dizem que maio é o nosso silêncio bonito, mas digo que nesse momento ele é bem triste, por um motivo bom, porém triste, saber que não vou te ver por dois anos, mds, difícil de mais, ter que aceitar e ouvir todos a sua volta falando sobre o quão ruim é isso, hoje nos despedimos oficialente, não achei que chegaria esse dia tão rápido, mas aconteceu e já estou morrendo de saudade, mas se lembre de ser forte, de ser firme, de suportar as coisas, não vou estar por perto mas estarei com você independente do que for, lembre-se de mim, do seu amor, sei que não vai ser fácil no começo mas sei que vamos aguentar firmes, não importa o tempo ou a distância, nosso amor vai continuar sendo o mesmo, até mais forte, nossa saudade vai triplicar, mas olha só, que sorte a nossa ter alguém que podemos dizer que sentimos tanta falta assim, o senhor nos colocou um na vida do outro e agora nos deu esse desafio, para poder ver o noss amor, nossa lealdade... Eu te amo muito, estou indo lá para fazer o meu papel de missionário, não quero outramulher na minha vida, eu já tenho oo meu amor comigo, isso ja é mais do que o suficiente, você é a única que ocupa os meus pensamentos, que me faz pensar em você do bom dia ao boa noite, que tem meu riso, meu amor, meu jeito mais bobo possível, eu su totalmente apaixonao por você, não te troco por nad nesse mundo. Eu te amo e estou contigo, me espere, que logo estou de volta com você, para realizarmos nossos sonhos, eu te amo meu amor, obrigado por tudo que fez e que passamos juntos, cada mommento, cada risada, cada foto, tudo, não se esqueça que aproveitamos ao máximo, não fique triste ou arrependida se não tiramos tantas fotos assim, mas quando quiser lembrar da gente, feche os olhos e se lembre do nosso momento juntos mais especial para você, se lembre das falas, dos sentimentos, de tudo. Vou estar sempre orando por você, eu te amo para sempre. Antes de terminar de ler, só quero que saiba que você é íncrivel e você foi super forte hoje, nâo existem pessoas no mundo que tiveram a coragem que você teve, por aceitar isso, por isso para os outros é loucura, mas para nós dois, é amor, nós vamos ficar bem, vamos aguentar.  2026 1 ano que me despedi de você, sim, a saudade com toda certeza vai está imensa, mas feli por estarmos conseguindo.  2027 finalmente concluida a missão, estu voltando para a minha princesa, para a minha família, agora minha meta é você, é nosso futuro, poder voltar a te ajudar, estar ao seu lado, te fazer carinho, te abraçar, te beijar, não vejo a hora disso tudo, de poder colocar nossos planos de 2025 em prática agor, eu te amoooooooooooooooo e estou chegando!  ",
+        junho: "💞 Junho – Mês dos namorados e dos corações apaixonados! É queria estar ao seu lado para passar o nosso primeiro dia dos namorados juntos meu amor, eu te amo tanto, não ta sendo fácil lidar com a despedida, mas saiba que você é a mulher da minha vida, e passar 2 anos sem viver o nosso dia dos namorados não vai ser nada comparado a eternidade que vamso viver, depois de um tempo vamos comemorar nosso dia de casamento, não vejo a hora de aproveitar tudo isso com você. Que quando as coisas ficarem difíceis ou quando você estiver em um dia ruim... Que o senhor te lembre menininha o quão íncrivel você é o quão única você é, rára e insubstituível... e o quão teu coração é bom, que você não venhase esquecer do brilinho que você carrega nos olhos e nem o amor mais puro e genuíno que só você tem, menininha que você nâo venha jamais se esquecer que você será uma boa esposa, boa mãe, boa comapnheira, e principalmente ue você não se esqueça que você viverá cada promessa do senhor e cada sonho que você tem no seu coração, que nenhum dia ruim venha fazer você pensar que é uma pessoa ruim... eu te amo princesinha!",
+        julho: "🔥 Julho: \julho traz pra gente um friozinho, querer ficar na coberta deitadinhos, bom, isso era o que eu queria com você mor, queria estar grudado em você te abrçar e nao soltar mai, mas saiba que independente do frio, calor, ou a estação que estiver, meu amor por você é constante e eterno, ele não muda, ele nao fica mais fraco, ele so se fortalece, aumenta cada vez mais, sem ter um limite para para ele. Queria ter você em meu braços, mas saiba que assim que eu voltar vamos aproveitar ao máximo juntos, passar frio, calor, tudo, quero poder te fazer carinho, deitar com você, ver algumas novas series, porque você que vai me falar quai são e me atualizar de tudo de novo kkkkk eu sou viciado em você e no nosso amor!",
+        agosto: "💫 Agosto: Agosto, um mês longo, masagora virou um mês de resitência, De lembrar que nosso amor é forte o suficiente para aguentar qualquer distância, qualquer tempo. E que tudo isso vai passar, e nós estaremos de novo no mesmo abraço. tenho certeza de que vamos suportar, independente do que esteja acontecendo com você, ou comigo, o senhor vai nos ajudar, como sempre ajudou, ja se passaram alguns meses e foi bem rápido, muitas coisas aconteceram, muitas outras ainda vão, mas temos que ser firme e suportara tristeza de estarmos diatntes, espero conversar com você sempre, ter videos seus, fotos suas, ligações, mensagens, audios, quero aquele meu sorrisinho de volta, aquele olhar de braviha, quero o amo rda minha vida... Você é a melhor coisa que ja houve na minha vida, acho que se não fosse você eu nem estaria por aqui hoje, quando nos aproximamos eu sinceramente tava tão desanimado, não queria mais nada, só seguir a minha vida normal, sem ser um discípulo de Jesus Cristo, só ir na igreja já estava bom demais para mim, até que chegou você e tudo isso mudou, meus onjetivos, minhas metas, meus sonhos, aquela vontade de ir para  a missão aumentou 3x mais, o senhor nos uniu com um propósito sem dúvida e sou muito grato por ter me aproximado de você e ter me apaixonado pela mulher incrível que você é, minha morena!!!!!  ",
+        setembro: "🍃 Setembro: Dizem qu esetembro é o mesmo que chega e tudo florece, acho que é verdade, porque esse mês tomei a melhor decisão da minha vida, foi onde tudo ficou lindo, ganhou cor, ganhou vida, ganhou um amor, puro e sincero, nesse mes vamos estar completando 1 ano ou 2 dependendo de quando você estiver lendo, queria muito estar presente nessa data, mas saiba que quando for esse dia, seja em qualquer lugar que eu estiver do rio eu vou comemorar tanto, vou pular de felicidade po rter completado meu primeiro ou segundo ano de namoro com o amor da minha vida, triste por estar longe, mas feli por saber que tenho alguém que me ama realmente, sou muito feliz com você, obrigado por toda nossa trajetória, por tudo que vivemos e por ter escolhido o mesmo que eu, sou muito muito muito feliz por ter você na minha vida minha princesa, lembre-se sempre de mim, lembre-se que sou completamente apaixonado por você e amo a nossa história. Não vejo a hora de voltar para viver ao seu lado, para realizarmos nossos sonhos!",
+        outubro: "🍁 Outubro: Outubro tem a cor das folhas que caem e a beleza das coisas que continuam, assim como nosso amor, nós crescemos, amadurecemos e nosso amor continua sempreee, cada mês com você é um novo motivo para acreditar que fomos feitos um para o outro. Mês do seu aniversário, como eu queria estar por perto para aproveitarmos, juntos, você fazendo 18, e 19 anos, mds, fico triste de não estar por perto nesse momento especial, mas sei que vamos aproveitar muito quando eu voltar, sem dúvida nenhuma você deve estar ainda mais linda, ainda mais inteligente e minha saudade com toda certeza vai ta o dobro do que já está nesse momento, você é a mulher da minha vida. Posso dizer que te vi crescer praticamente, bem frase de velho kkkk mas que orgulho de ver quem você se tornou, por saber aonde está e aonde chegou, pensar no tanto de coisas que você já passou durante todos esses anos, mas se manteve firme, principalmente agora que tivemos que ficar distantes um do outro, mas vejo a sua força e admiro isso em você, me fazendo ser extremamente apaixonado na minha princesa, ver a mulher incrível que eu tenho me esperando, me da mais força para continuar aqui firme e forte na minha missão. Saiba que você é mais do que especial para mim, você é o meu amor, a mulher que quero comigo para sempre, sou grato ao senhor por estar ao seu lado te ajudando em tudo, te guardando de qualquer coisa ruim... continua firme princesa, que logo eu estou voltando! Parabéns, feliz 18 ou 19 anos meu amor, que o senhor possa te ajudar e te abençoar nessa sua nova fase de vida, eu espero que continue sendo quem você é, que continue firme nos seus sonhos e objetivos, eu te amo princesa, para sempre nós dois minha pequena!!",
+        novembro: "🍂 Novembro: Novembro tem cheiro de fim de ano, de reflexão. E eu penso em nós. Em como superamos cada mês, cada saudade, cada espera. Te amar me ensinou que o tempo não é inimigo, mas companheiro da fé que tenho em nós dois. É surreal ver como o tempo passa, mas quanto mais ele passa mais eu tenho certeza de que é você quem eu quero na minha vida par ao resto dela, mais niguém, a distância é difícil sim, mas a nossa paixão um pelo outro é coisa de outro mundo, sem dúvida nenhuma, a nossa conexão, nosso amor, lealdade, compnharismo, amizade, tudo, tudo entre a gente eu vejo de uma forma tão perfeita. O tempo ele não é nosso inimigo, porque ao mesmo tempo que ele nos separou de perto de um e do outro ele irá nos unir, ele serve para aprendermos, para sermos felizes, para amadurecer e nos tornar pessoas melhores, eu te amo de uma forma inexplicável, a ponto de passar horas criando um site só pra você, mas saiba que isso não é nem o mínimo que posso e vou fazer por você. te amoooooo pequena!",
+        dezembro: "🎄 Dezembro: Último mês do ano, mas nunca o último do nosso amor, é assim que gosto de pensar, meu aniversário sem voê por perto, eh vai ser bem triste, porém já vou saber que estou perto de voltar. Dezembro, mês de festas, natal, ano novo, tudo que eu queria agora era saber que eu iria passar com você, pelo menos um dois kkkk. Estou torçendo para que possamos vencer tudo isso aqui juntos, que todas as nossas coversas sobre o futuro virem realidade, meu maior presente foi ter você na minha vida, se pudessem me perguntaar o meu aniverário mais feliz, diria sem dúvida que foi ao seu lado, não quero outra pessoa na minha vida, só quero você junto comig. Dezembro chega com luzes e lembranças. É o fim de mais um ciclo e o começo de mais uma promessa: a de continuar te amando em cada novo ano. Que venha tudo outra vez, contanto que venha contigo. Você é meu presente mais bonito.❤️"
+      };
+
+      const box = document.getElementById("monthText");
+      box.innerText = textos[mes];
+      box.style.display = "block";
+      box.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Música baixa
+    const musica = document.getElementById("bgMusic");
+    musica.volume = 0.1;
+  </script>
+</body>
+</html>
